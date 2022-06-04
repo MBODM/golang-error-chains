@@ -25,7 +25,7 @@ In the example 3 different errors can occur:
 - Some own defined custom error, "thrown" in package2, when parsing.
 - Some error from using Go standard library, in package3, when running the exe.
 
-The example shows in the `main()` function how to differ the errors at the top. The `main()` function does some special printing, if one of the chained errors is a self-defined custom error (defined in the example code, in the "apperror" package). But if there is any error from the Go standard library, the `main()`function does some other type of printing.
+The example shows in the `main()` function how to differ the errors at the top. The `main()` function does some special printing, if one of the chained errors is a self-defined custom error (defined in the example code, in the "app" package). But if there is any error from the Go standard library, the `main()`function does some other type of printing. To simulate the "something went wrong in packageX" behaviour, the code uses 3 global boolean flags (defined in the "sim" package).
 
 Everything else is commented in the source code and should be rather self-explanatory. The example is really simple and everyone should get it, just by reading the source code. 😉
 
