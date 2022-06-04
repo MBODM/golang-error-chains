@@ -25,7 +25,7 @@ In the example 3 different errors can occur:
 - Some own defined custom error, "thrown" in package2, when parsing.
 - Some error from using Go standard library, in package3, when running the exe.
 
-At the top, in `main()` function, the example shows how to differ the errors. The `main()` function does some special printing, if one of the chained errors is a self-defined custom error (defined in the example code). But if there is some error from the Go standard library, the `main`function does another type of printing.
+At the top, in `main()` function, the example shows how to differ the errors. The `main()` function does some special printing, if one of the chained errors is a self-defined custom error (defined in the example code, in the "apperror" package). But if there is some error from the Go standard library, the `main`function does another type of printing.
 
 Everything else is commented in the source code and should be rather self-explanatory. The example is really simple and everyone should get it, just by reading the source code. 😉
 
