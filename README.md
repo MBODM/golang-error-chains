@@ -29,4 +29,7 @@ The example shows in the `main()` function how to differ the errors at the top. 
 
 Everything else is commented in the source code and should be rather self-explanatory. The example is really simple and everyone should get it, just by reading the source code. 😉
 
+### Requirements
+You need at least Go 1.13 (released September 2019)
+
 #### Have fun.
