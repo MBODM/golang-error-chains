@@ -11,7 +11,7 @@ The example includes 3 very simple packages:
 The example demonstrates
 - how errors are wrapped
 - how errors can be differed at the top (in main() function)
-when one package is using another package and all packages "throw" some errors.
+- what happens when one package is using another package and all "throw" some errors.
 
 ### Scenario
 
