@@ -6,7 +6,7 @@ A simple example, demonstrating error-chains in Go.
 The example demonstrates
 - how errors are wrapped
 - how errors can be differed at the top (in `main()` function)
-- what happens when one package is using another package and all "throw" some errors.
+- what happens when one package is using another package and all "throw" some errors
 
 ### Scenario
 
