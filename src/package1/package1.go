@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"example.com/error-chains/simulation"
+	"example.com/error-chains/sim"
 )
 
 func ReadFile() (string, error) {
@@ -21,7 +21,7 @@ func ReadFile() (string, error) {
 }
 
 func getFileName() string {
-	if simulation.GoLibErrorInPackage1 {
+	if sim.SimulateErrorInPackage1 {
 		// Depending on simulation settings, we force the error by reading a non-existing file.
 		return `C:\Windows\non-existing-file.txt`
 	} else {

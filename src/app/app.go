@@ -1,4 +1,4 @@
-package apperror
+package app
 
 type CustomError struct {
 	Err error

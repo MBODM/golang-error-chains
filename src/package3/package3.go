@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"example.com/error-chains/package2"
-	"example.com/error-chains/simulation"
+	"example.com/error-chains/sim"
 )
 
 func Execute() (string, error) {
@@ -21,7 +21,7 @@ func Execute() (string, error) {
 		return "", fmt.Errorf("error in package3.Execute() func: %w", err)
 	}
 	exeFile := "cmd.exe"
-	if simulation.GoLibErrorInPackage3 {
+	if sim.SimulateErrorInPackage3 {
 		// To create an error here, we just run a non-existing exe file.
 		exeFile = "nonexisting.exe"
 	}
