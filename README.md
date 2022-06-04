@@ -8,20 +8,23 @@ The example includes 3 very simple packages:
 - package2
 - package3
 
-In the example 3 different errors can occur:
-- Some error from using Go standard library, in package1.
-- Some own defined custom error, "thrown" in package2.
-- Some error from using Go standard library, in package3.
-
 The example demonstrates
-
 - how errors are wrapped
 - how errors can be differed at the top (in main() function)
+when one package is using another package and all packages "throw" some errors.
 
-when one package use another package and all "throw" some errors.
+### Scenario
 
-Everything else is commented in the source code.
+In our example scenario all 3 packages have some dedicated usage:
+- package1 shall read a text file.
+- package2 shall shall parse that file.
+- package3 shall run some exe file and shall use the parsed result of package2 as parameters for that exe.
 
-The example is really simple and everyone should get it, just by reading the source code.
+In the example 3 different errors can occur:
+- Some error from using Go standard library, in package1, when reading the file.
+- Some own defined custom error, "thrown" in package2, when parsing.
+- Some error from using Go standard library, in package3, when running the exe.
+
+Everything else is commented in the source code and should be rather self-explanatory. The example is really simple and everyone should get it, just by reading the source code. 😉
 
 #### Have fun.
