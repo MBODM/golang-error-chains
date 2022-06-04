@@ -16,9 +16,9 @@ The example includes 3 very simple packages:
 - package3
 
 In our example scenario all 3 packages have some dedicated usage:
-- package1 shall read a text file.
-- package2 shall shall parse that file.
-- package3 shall run some exe file and shall use the parsed result of package2 as parameters for that exe.
+- package1 shall read a text file
+- package2 shall shall parse that file
+- package3 shall run some exe file and shall use the parsed result of package2 as parameters for that exe
 
 In the example 3 different errors can occur:
 - Some error from using Go standard library, in package1, when reading the file.
