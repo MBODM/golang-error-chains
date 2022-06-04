@@ -3,17 +3,17 @@ A simple example, demonstrating error-chains in Go.
 
 ### Overview
 
-The example includes 3 very simple packages:
-- package1
-- package2
-- package3
-
 The example demonstrates
 - how errors are wrapped
 - how errors can be differed at the top (in main() function)
 - what happens when one package is using another package and all "throw" some errors.
 
 ### Scenario
+
+The example includes 3 very simple packages:
+- package1
+- package2
+- package3
 
 In our example scenario all 3 packages have some dedicated usage:
 - package1 shall read a text file.
